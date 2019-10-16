@@ -15,13 +15,14 @@ class span
 {
     public:
         span() noexcept = default;
+        ~span() = default;
 
-    protected:
-    private:
+      protected:
+      private:
         pointer<T> data {nullptr};
 };
 
 
 }; // namespace nstd
 
-#endif 
+#endif
