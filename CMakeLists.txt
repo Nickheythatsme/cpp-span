@@ -6,4 +6,6 @@ enable_testing()
 #add_subdirectory(src)
 #add_subdirectory(tests)
 
+set(CMAKE_CXX_CLANG_TIDY clang-tidy -checks=-*,readability-*)
+
 add_executable(span main.cpp)
