@@ -1,6 +1,5 @@
 #include <memory>
 
-
 #ifndef SPAN
 #define SPAN
 
@@ -13,15 +12,14 @@ using pointer = std::unique_ptr<T>;
 template<typename T>
 class span
 {
-    public:
-        span() noexcept = default;
-        ~span() = default;
+public:
+  span() noexcept = default;
+  ~span() = default;
 
-      protected:
-      private:
-        pointer<T> data {nullptr};
+protected:
+private:
+  pointer<T> data{ nullptr };
 };
-
 
 }; // namespace nstd
 
