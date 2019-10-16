@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# IDE and OS files
+.DS_Store
+.idea
+.vscode
+
+# Build files
+_debug
